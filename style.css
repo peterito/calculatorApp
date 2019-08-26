@@ -1,0 +1,113 @@
+body {
+  font-family: "open sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(3, 94, 64, 0.561),
+      rgba(241, 10, 106, 0.438)
+    ),
+    url(/img/bg.png);
+  overflow: hidden;
+}
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: beige;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.616);
+}
+#result {
+  height: 120px;
+  background-color: rgba(8, 8, 8, 0.712);
+  border: 1px solid rgb(240, 234, 234);
+  border-radius: 10px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #a7a3a3;
+}
+#output {
+  text-align: right;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-weight: bold;
+  margin: 10px 20px;
+  font-size: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#keyboard {
+  height: 350px;
+}
+.operator,
+.number {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 30%;
+  border-width: 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.operator {
+  font-size: 20px;
+}
+
+.number {
+  background-color: rgba(202, 202, 193, 0.568);
+}
+.number,
+.operator {
+  cursor: pointer;
+}
+.number:active,
+.operator:active {
+  font-size: 5px;
+}
+.operator:focus,
+.number:focus {
+  outline: 0;
+}
+.operator:hover,
+.number:hover {
+  background-color: rgba(84, 91, 97, 0.815);
+}
+#equals {
+  width: 130px;
+  float: right;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: rgba(93, 93, 231, 0.692);
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: rgba(6, 137, 141, 0.692);
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: rgba(253, 13, 193, 0.644);
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: rgba(158, 11, 11, 0.657);
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: rgba(5, 153, 12, 0.692);
+}
