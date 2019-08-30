@@ -80,6 +80,8 @@ class Calculator {
     this.getDisplayNumber(this.typingOperation);
     if (this.operation != null) {
       this.numberTyped.innerText = `${this.typedOperation} ${this.operation}`;
+    } else {
+      this.numberTyped.innerText = "";
     }
   }
 }
